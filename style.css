@@ -1,0 +1,400 @@
+/* ===========================
+   FOR MY BABY ❤️
+   Designed with love by Eshaan
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    overflow-x:hidden;
+    color:white;
+    font-family:'Cormorant Garamond',serif;
+}
+
+/* Background */
+
+#stars,
+#sparkles,
+#hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+
+#stars{
+    background:
+    radial-gradient(white 1px, transparent 1px);
+    background-size:80px 80px;
+    opacity:.35;
+    animation:moveStars 80s linear infinite;
+}
+
+@keyframes moveStars{
+
+from{
+transform:translateY(0px);
+}
+
+to{
+transform:translateY(-300px);
+}
+
+}
+
+/* Intro */
+
+#intro{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+.smallText{
+
+font-size:28px;
+
+letter-spacing:6px;
+
+opacity:.8;
+
+margin-bottom:10px;
+
+}
+
+.name{
+
+font-family:'Great Vibes',cursive;
+
+font-size:85px;
+
+font-weight:400;
+
+color:white;
+
+text-shadow:
+
+0 0 15px rgba(255,255,255,.3);
+
+}
+
+.subtitle{
+
+margin-top:15px;
+
+font-size:28px;
+
+opacity:.75;
+
+}
+
+#beginBtn{
+
+margin-top:60px;
+
+padding:18px 60px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:white;
+
+color:#111;
+
+transition:.35s;
+
+font-family:'Cormorant Garamond';
+
+box-shadow:
+
+0 10px 35px rgba(255,255,255,.2);
+
+}
+
+#beginBtn:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+
+0 15px 45px rgba(255,255,255,.3);
+
+}
+
+/* Hide Sections */
+
+.hidden{
+
+display:none;
+
+}
+
+/* Envelope */
+
+#envelopeSection{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.envelope{
+
+width:320px;
+
+height:220px;
+
+background:#f3ede3;
+
+border-radius:8px;
+
+position:relative;
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.45);
+
+transition:.5s;
+
+cursor:pointer;
+
+}
+
+.envelope:hover{
+
+transform:translateY(-8px);
+
+}
+
+.flap{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100px;
+
+background:#e8decd;
+
+clip-path:polygon(0 0,100% 0,50% 100%);
+
+}
+
+.letterPreview{
+
+position:absolute;
+
+bottom:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:45px;
+
+}
+
+/* Popup */
+
+#popupSection{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.popup{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+padding:50px;
+
+border-radius:25px;
+
+width:90%;
+
+max-width:600px;
+
+text-align:center;
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.45);
+
+}
+
+.popup p{
+
+font-size:35px;
+
+margin-bottom:35px;
+
+}
+
+#nextPopup{
+
+padding:15px 45px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+font-size:20px;
+
+}
+
+/* Letter */
+
+#letterSection{
+
+padding:120px 20px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.paper{
+
+background:#fdf8ef;
+
+max-width:900px;
+
+width:100%;
+
+padding:80px;
+
+border-radius:12px;
+
+box-shadow:
+
+0 30px 80px rgba(0,0,0,.4);
+
+color:#2f2f2f;
+
+font-size:28px;
+
+line-height:2;
+
+font-family:'Dancing Script',cursive;
+
+}
+
+.paper h2{
+
+text-align:center;
+
+margin-bottom:60px;
+
+font-family:'Cormorant Garamond';
+
+}
+
+/* Ending */
+
+#ending{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+#ending h2{
+
+font-size:70px;
+
+font-family:'Great Vibes';
+
+}
+
+#ending p{
+
+margin-top:20px;
+
+font-size:28px;
+
+opacity:.8;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.name{
+
+font-size:60px;
+
+}
+
+.paper{
+
+padding:40px;
+
+font-size:22px;
+
+}
+
+.popup p{
+
+font-size:28px;
+
+}
+
+}
